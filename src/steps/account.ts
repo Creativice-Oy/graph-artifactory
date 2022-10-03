@@ -28,7 +28,7 @@ export async function fetchAccountDetails({
         _type: entities.ACCOUNT._type,
         _class: entities.ACCOUNT._class,
         webLink: account.uri,
-        displayName: account.name,
+        name: account.name,
         username: account.name,
         email: account.email,
         policyManager: account.policyManager,
