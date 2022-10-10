@@ -79,7 +79,7 @@ describe('JFrog Arrifactory', () => {
     executionContext.instance.config.clientAdminName = 'wrongname@wrong.com';
 
     await expect(validateInvocation(executionContext)).rejects.toThrow(
-      IntegrationValidationError,
+      IntegrationProviderAuthenticationError,
     );
   });
 });
